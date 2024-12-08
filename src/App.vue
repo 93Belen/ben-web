@@ -32,7 +32,7 @@ Draggable.create(".knob", {
 
 <template>
   <div class="w-screen h-screen md:min-h-[700px] bg-ben-green overflow-hidden flex flex-col">
-    <div class="absolute w-[100vw] top-[5px] md:h-[200px]">
+    <div class="absolute w-[100vw] top-[5px] md:h-[200px] opacity-[0.5] z-[0]">
       <Lines/>
     </div>
     <div class="w-full flex justify-end text-center h-[20vh] font-noto font-[800] p-6 pt-8 md:pt-2">
@@ -41,7 +41,7 @@ Draggable.create(".knob", {
         <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
       </div>
     </div>
-    <div class="md:flex md:h-[80vh] md:justify-center md:items-center">
+    <div class="md:flex md:h-[80vh] md:justify-center md:items-center relative z-[80]">
       <div class="container z-[999] abolsute top-[40vh] h-[120vh] md:h-fit absolute w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" class="w-full h-fit md:w-[350px] min-h-[70vh] px-6 bg-ben-white rounded-[50px] pt-4 md:pt-0 md:bg-transparent">
           <div id="pedal" class="min-h-[60vh]">
