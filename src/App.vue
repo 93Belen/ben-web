@@ -8,8 +8,8 @@ import { onMounted } from 'vue';
 
 
 gsap.registerPlugin(Draggable);
-window.scroll('0px', '0px')
 onMounted(() => {
+  window.scroll('0px', '0px')
   Draggable.create("#pedal-div", {
   type: "y",
   handle: '.handle',
