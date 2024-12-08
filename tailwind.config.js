@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'ben-green': '#02B7AF'
+        'ben-green': '#02B7AF',
+        'ben-white': '#F8F8F8'
       }
     },
   },
