@@ -10,9 +10,20 @@ import { onMounted } from 'vue';
 gsap.registerPlugin(Draggable);
 
 onMounted(() => {
-  Draggable.create("#pedal", {
+  Draggable.create("#pedal-div", {
   type: "y",
-  bounds: ".container"
+  bounds: ".container",
+  dragResistance: 0.35
+});
+
+ gsap.set(".knob", {
+        transformOrigin: "center center" // Set the rotation point to the bottom-right corner
+    });
+
+Draggable.create(".knob", {
+  type: "rotation",
+  transformOrigin: "right bottom",
+  dragResistance: 0.15
 });
 })
 
@@ -24,9 +35,11 @@ onMounted(() => {
       <Lines/>
     </div>
     <div class="container abolsute top-[40vh] h-[120vh] absolute w-full">
-      <div id="pedal" class="w-full h-fit px-6 bg-ben-white rounded-[50px] pt-4">
-        <Pedal/>
-      </div>
+      <div id="pedal-div" class="w-full h-fit px-6 bg-ben-white rounded-[50px] pt-4">
+        <div id="pedal">
+          <Pedal/>
+        </div>
+    </div>
     </div>
   </div>
 </template>
