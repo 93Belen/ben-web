@@ -12,6 +12,7 @@ gsap.registerPlugin(Draggable);
 onMounted(() => {
   Draggable.create("#pedal-div", {
   type: "y",
+  handle: '.handle',
   bounds: ".container",
   dragResistance: 0.35
 });
