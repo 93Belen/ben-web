@@ -18,7 +18,7 @@ onMounted(() => {
 });
 
  gsap.set(".knob", {
-        transformOrigin: "center center" // Set the rotation point to the bottom-right corner
+        transformOrigin: "center center"
     });
 
 Draggable.create(".knob", {
@@ -31,7 +31,7 @@ Draggable.create(".knob", {
 </script>
 
 <template>
-  <div class="w-screen h-screen md:min-h-[700px] bg-ben-green overflow-hidden">
+  <div class="w-screen h-screen md:min-h-[700px] bg-ben-green overflow-hidden flex flex-col">
     <div class="absolute w-[100vw] md:top-[5px] top-[-5px] md:h-[200px]">
       <Lines/>
     </div>
