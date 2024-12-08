@@ -42,7 +42,7 @@ Draggable.create(".knob", {
       </div>
     </div>
     <div class="md:flex md:h-[80vh] md:justify-center md:items-center relative z-[80]">
-      <div class="container z-[999] abolsute top-[30vh] h-[120vh] md:h-fit absolute w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
+      <div class="container z-[999] abolsute top-[25vh] h-[120vh] md:h-fit absolute w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" class="w-full h-fit md:w-[350px] min-h-[70vh] px-6 bg-ben-white rounded-[50px] pt-4 md:pt-0 md:bg-transparent">
           <div id="pedal" class="min-h-[60vh]">
             <Pedal/>
