@@ -23,7 +23,7 @@ onMounted(() => {
     <div class="absolute w-[115vw] left-[-5vw]">
       <Lines/>
     </div>
-    <div class="container abolsute top-[50vh] h-[115vh] absolute w-full">
+    <div class="container abolsute top-[40vh] h-[120vh] absolute w-full">
       <div id="pedal" class="w-full h-fit bg-ben-white rounded-[50px] pt-4">
         <Pedal/>
       </div>
