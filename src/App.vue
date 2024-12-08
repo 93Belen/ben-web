@@ -32,14 +32,29 @@ Draggable.create(".knob", {
 
 <template>
   <div class="w-screen h-screen bg-ben-green overflow-hidden">
-    <div class="absolute w-[115vw] left-[-5vw]">
+    <div class="w-full flex justify-end text-center h-[20vh] font-noto font-[800] p-6">
+      <div class="leading-[30px]">
+        <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
+        <p class="text-[19px] tracking-[-0.5px]">KINGSTON</p>
+      </div>
+    </div>
+    <div class="absolute w-[115vw] left-[-5vw] md:top-[5px] top-[-25px] md:h-[200px]">
       <Lines/>
     </div>
-    <div class="container abolsute top-[40vh] h-[120vh] absolute w-full">
-      <div id="pedal-div" class="w-full h-fit px-6 bg-ben-white rounded-[50px] pt-4">
-        <div id="pedal">
-          <Pedal/>
-        </div>
+    <div class="md:flex md:h-[70vh] md:justify-center md:items-center">
+      <div class="container z-[999] abolsute top-[40vh] h-[120vh] md:h-fit absolute w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
+        <div id="pedal-div" class="w-full h-fit md:w-[400px] px-6 bg-ben-white rounded-[50px] pt-4 md:pt-0 md:bg-transparent">
+          <div id="pedal">
+            <Pedal/>
+          </div>
+      </div>
+    </div>
+    <div class="md:w-[60vw] md:h-fit flex justify-center items-center p-8 md:p-12 md:px-20 z-[99]">
+      <p>lllorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem </p>
     </div>
     </div>
   </div>

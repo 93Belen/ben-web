@@ -9,6 +9,10 @@ export default {
       colors: {
         'ben-green': '#02B7AF',
         'ben-white': '#F8F8F8'
+      },
+      fontFamily: {
+        'noto': '"Noto Sans Display"',
+        'montserrat': '"Montserrat"'
       }
     },
   },
