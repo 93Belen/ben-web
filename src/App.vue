@@ -24,7 +24,7 @@ onMounted(() => {
       <Lines/>
     </div>
     <div class="container abolsute top-[40vh] h-[120vh] absolute w-full">
-      <div id="pedal" class="w-full h-fit bg-ben-white rounded-[50px] pt-4">
+      <div id="pedal" class="w-full h-fit px-6 bg-ben-white rounded-[50px] pt-4">
         <Pedal/>
       </div>
     </div>
