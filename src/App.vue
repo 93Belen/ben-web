@@ -14,7 +14,7 @@ onMounted(() => {
   type: "y",
   handle: '.handle',
   bounds: ".container",
-  dragResistance: 0.35
+  dragResistance: 0.3
 });
 
  gsap.set(".knob", {
