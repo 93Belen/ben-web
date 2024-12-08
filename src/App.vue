@@ -32,14 +32,14 @@ Draggable.create(".knob", {
 
 <template>
   <div class="w-screen h-screen md:min-h-[700px] bg-ben-green overflow-hidden">
+    <div class="absolute w-[100vw] md:top-[5px] top-[-5px] md:h-[200px]">
+      <Lines/>
+    </div>
     <div class="w-full flex justify-end text-center h-[20vh] font-noto font-[800] p-6">
       <div class="leading-[30px]">
         <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
         <p class="text-[19px] tracking-[-0.5px]">KINGSTON</p>
       </div>
-    </div>
-    <div class="absolute w-[100vw] md:top-[5px] top-[-25px] md:h-[200px]">
-      <Lines/>
     </div>
     <div class="md:flex md:h-[80vh] md:justify-center md:items-center">
       <div class="container z-[999] abolsute top-[40vh] h-[120vh] md:h-fit absolute w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
