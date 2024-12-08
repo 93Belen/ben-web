@@ -36,9 +36,9 @@ Draggable.create(".knob", {
       <Lines/>
     </div>
     <div class="w-full flex justify-end text-center h-[20vh] font-noto font-[800] p-6">
-      <div class="leading-[30px]">
+      <div class="">
         <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
-        <p class="text-[19px] tracking-[-0.5px]">KINGSTON</p>
+        <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
       </div>
     </div>
     <div class="md:flex md:h-[80vh] md:justify-center md:items-center">
