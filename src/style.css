@@ -5,4 +5,5 @@
 
 body, #app, html {
   overflow: hidden;
+  background-color: '#02B7AF';
 }
