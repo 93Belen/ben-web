@@ -57,8 +57,8 @@ Draggable.create(".knob", {
           It has survived not only five centuries, but also the leap into electronic typesetting, 
           remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem </p>
       </div>
-      <div class="container col-start-1 row-start-1 z-[99] md:order-1 abolsute top-[-40vh] h-[180dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
-        <div id="pedal-div" class="w-full h-fit md:w-[350px] min-h-[100vh] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-[50px] pt-4 md:pt-0 md:bg-transparent">
+      <div class="container col-start-1 row-start-1 z-[99] md:order-1 abolsute top-[-40dvh] h-[180dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
+        <div id="pedal-div" class="w-full h-fit md:w-[350px] min-h-[100dvh] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-[50px] pt-4 md:pt-0 md:bg-transparent">
           <div id="pedal" class="max-h-[60dvh] w-[90%] m-auto">
             <Pedal/>
           </div>
