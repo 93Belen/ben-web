@@ -37,7 +37,7 @@ Draggable.create(".knob", {
       <Lines/>
     </div>
     <!-- Ben Kingston -->
-    <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] p-6">
+    <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-2 p-6">
       <div class="">
         <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
         <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
