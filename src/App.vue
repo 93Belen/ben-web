@@ -37,7 +37,7 @@ Draggable.create(".knob", {
       <Lines/>
     </div>
     <!-- Ben Kingston -->
-    <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-2 p-6">
+    <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-2 px-6">
       <div class="">
         <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
         <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
@@ -45,7 +45,7 @@ Draggable.create(".knob", {
     </div>
     <!-- Text & Pedal -->
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
-      <div class="md:w-[60vw] col-start-1 row-start-1 z-[0] md:order-last md:h-fit flex flex-col p-8 md:p-12 md:px-20 z-[99]">
+      <div class="md:w-[60vw] col-start-1 row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-8 py-2 md:p-12 md:px-20 z-[99]">
         <p>lllorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
