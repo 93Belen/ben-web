@@ -18,7 +18,7 @@ onMounted(() => {
   type: "y",
   handle: '.handle',
   bounds: ".container",
-  dragResistance: 0.3
+  dragResistance: 0.1
 });
 // Turn knob around center axis
  gsap.set(".knob", {
