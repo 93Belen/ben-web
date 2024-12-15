@@ -54,12 +54,12 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "Track record of motivating teams and increasing revenue. Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... Find out more in my Linkedin!",
+  text: "Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... Find out more in my Linkedin!",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market Overland Park, Barista in Spain, General Manager at Taylor Street Baristas in London, Tour Manager in America and Europe... Download my full Resume here!",
+  text: "Assistant Team Leader at Whole Foods Market, Barista in Spain, General Manager at Taylor Street Baristas in London, Tour Manager in America and Europe... Download my full Resume here!",
   ease: "none",
 });
 gsap.to('.tbd', {
