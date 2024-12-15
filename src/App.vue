@@ -59,7 +59,7 @@ gsap.to('.linkedin', {
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market Overland Park, Barista in Spain, General Manager at Taylor Street Baristas in London, Tour Manager in America and Europe tours... Download my full Resume here!",
+  text: "Assistant Team Leader at Whole Foods Market Overland Park, Barista in Spain, General Manager at Taylor Street Baristas in London, Tour Manager in America and Europe... Download my full Resume here!",
   ease: "none",
 });
 gsap.to('.tbd', {
