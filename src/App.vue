@@ -54,12 +54,12 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "Linkedin text now tururu catapun chimpun",
+  text: "Track record of motivating teams and increasing revenue. Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... Find out more in my Linkedin!",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Download my resume juhuu catapun chimpun",
+  text: "Assistant Team Leader at Whole Foods Market Overland Park, Barista in Spain, General Manager at Taylor Street Baristas in London, Tour Manager in America and Europe tours... Download my full Resume here!",
   ease: "none",
 });
 gsap.to('.tbd', {
@@ -69,7 +69,7 @@ gsap.to('.tbd', {
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "intro text now lalala lalala ole ole",
+  text: "Hey! My name is Ben and I have over 16 years of experience as a manager in different industries and continents. From the coffee and customer service industry to the music world. From America to Europe, and back! Play with the pedal and find out more about me!",
   ease: "none",
 });
 })
@@ -92,9 +92,9 @@ gsap.to('.intro', {
     <!-- Text & Pedal -->
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-8 py-2 md:p-12 md:px-20 z-[99]">
-        <p :class="textCode" >lllorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p :class="textCode" >Hey! My name is Ben and I have over 16 years of experience as a manager in different industries and continents.
+           From the coffee and customer service industry to the music world. From America to Europe, and back!
+           Play with the pedal and find out more about me!</p>
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" class="w-full h-fit md:w-[350px] min-h-[100dvh] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
