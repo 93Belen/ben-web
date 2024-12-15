@@ -4,11 +4,15 @@ import Lines from './components/Lines.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
-import { onMounted } from 'vue';
+import { TextPlugin } from "gsap/TextPlugin";
+import { onMounted, ref, watch, onUpdated } from 'vue';
 
+const textCode = ref('intro')
 
-gsap.registerPlugin(Draggable);
+gsap.registerPlugin(Draggable, TextPlugin);
+
 onMounted(() => {
+  // Draggable
   window.scroll('0px', '0px')
   Draggable.create("#pedal-div", {
   type: "y",
@@ -16,15 +20,57 @@ onMounted(() => {
   bounds: ".container",
   dragResistance: 0.3
 });
-
+// Turn knob around center axis
  gsap.set(".knob", {
         transformOrigin: "center center"
     });
-
+// Turn knob
 Draggable.create(".knob", {
   type: "rotation",
   transformOrigin: "right bottom",
-  dragResistance: 0.15
+  dragResistance: 0.15,
+  onDrag: (e) =>{
+    const thisKnob = e.target.closest('g').id
+    console.log(thisKnob)
+    if(thisKnob === 'volume'){
+      textCode.value = 'linkedin'
+    }
+    else if(thisKnob === 'comp'){
+      textCode.value = 'resume'
+    }
+    else if(thisKnob === 'eq'){
+      textCode.value = 'tbd'
+    }
+    else{
+      textCode.value = 'intro'
+    }
+  }
+});
+
+
+})
+
+onUpdated(() => {
+// Change text
+gsap.to('.linkedin', {
+  duration: 4,
+  text: "Linkedin text now tururu catapun chimpun",
+  ease: "none",
+});
+gsap.to('.resume', {
+  duration: 4,
+  text: "Download my resume juhuu catapun chimpun",
+  ease: "none",
+});
+gsap.to('.tbd', {
+  duration: 4,
+  text: "To be decieded tururu catapun chimpun",
+  ease: "none",
+});
+gsap.to('.intro', {
+  duration: 4,
+  text: "intro text now lalala lalala ole ole",
+  ease: "none",
 });
 })
 
@@ -46,7 +92,7 @@ Draggable.create(".knob", {
     <!-- Text & Pedal -->
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-8 py-2 md:p-12 md:px-20 z-[99]">
-        <p>lllorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <p :class="textCode" >lllorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
