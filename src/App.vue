@@ -63,22 +63,22 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... <span class='bg-pink p-[1px]'>Find out more in my Linkedin!</span>",
+  text: "Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-pink p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-orange p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe... Download my full Resume here!",
+  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe... Download my full Resume here!",
   ease: "none",
 });
 gsap.to('.img', {
   duration: 2,
-  text: "I'm open to any opportunity at <span class='bg-blue p-[1px] font-bold'>JHS</span>!",
+  text: "I'm open to any opportunity at <span class='bg-orange p-[1px] font-bold'>JHS</span>!",
   ease: "none",
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "Hey! <span class='bg-pink p-[1px]'>My name is Ben</span> and I have <span class='bg-orange p-[1px]'>over 16 years of experience</span> as a manager in different industries and continents. From the coffee and customer service industry to the <span class='bg-blue p-[1px]'>music world</span>. Play with the pedal and find out more about me!",
+  text: "Hey! My name is <span class='bg-pink p-[1px]'>Ben</span> and I have over <span class='bg-orange p-[1px]'>16 years</span> of experience as a manager in different industries and continents. From the coffee and customer service industry to the <span class='bg-blue p-[1px]'>music world</span>. Play with the pedal and find out more about me!",
   ease: "none",
 });
 })
@@ -100,8 +100,8 @@ gsap.to('.intro', {
     </div>
     <!-- Text & Pedal -->
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
-      <div class="md:w-[60vw] col-start-1 md:text-xl md:font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-6 py-2 md:p-12 md:px-20 z-[99]">
-        <p :class="textCode" ></p>
+      <div class="md:w-[60vw] col-start-1 text-lg md:text-xl font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-6 py-2 md:p-12 md:px-20 z-[99]">
+        <p :class="textCode" class="" ></p>
         <img v-if="textCode === 'img'" class="animate-appear w-full md:w-[500px]" src="/bengraphics.png" alt="">
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
