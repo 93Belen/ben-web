@@ -94,7 +94,7 @@ gsap.to('.intro', {
     </div>
     <div class="flex w-screen h-[20dvh] justify-between">
       <!-- Linkedin -->
-      <div class="w-[70px] self-start relativez-[99999]">
+      <div class="w-[70px] self-start z-[99999]">
        <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
       </div>
       <!-- Ben Kingston -->
