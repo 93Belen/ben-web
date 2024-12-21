@@ -1,6 +1,7 @@
 <script setup>
 import Pedal from './components/Pedal.vue'
 import Lines from './components/Lines.vue'
+import Linkedin from './components/Linkedin.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
@@ -68,7 +69,7 @@ gsap.to('.linkedin', {
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe... Download my full Resume here!",
+  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe... I've done it all!",
   ease: "none",
 });
 gsap.to('.img', {
@@ -91,11 +92,17 @@ gsap.to('.intro', {
     <div class="absolute w-[100vw] top-[5px] md:h-[200px] opacity-[0.5] z-[0]">
       <Lines/>
     </div>
-    <!-- Ben Kingston -->
-    <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-0 px-6">
-      <div class="">
-        <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
-        <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
+    <div class="flex w-screen">
+      <!-- Linkedin -->
+      <div class="w-[100px] self-start relative z-[99999]">
+       <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
+      </div>
+      <!-- Ben Kingston -->
+      <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-0 px-6">
+        <div class="">
+          <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
+          <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
+        </div>
       </div>
     </div>
     <!-- Text & Pedal -->
