@@ -45,13 +45,13 @@ Draggable.create(".knob", {
     if(thisKnob === 'volume'){
       textCode.value = 'linkedin'
     }
-    else if(thisKnob === 'comp'){
+    if(thisKnob === 'comp'){
       textCode.value = 'resume'
     }
-    else if(thisKnob === 'eq'){
+    if(thisKnob === 'eq'){
       textCode.value = 'img'
     }
-    else{
+    if(thisKnob === 'blend'){
       textCode.value = 'intro'
     }
   }
