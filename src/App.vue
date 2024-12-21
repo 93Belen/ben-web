@@ -64,7 +64,7 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "Experience in allocating budget, buying products, business accounting, recruitment, staff schedules, daily sales report... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
+  text: "I've managed it all! From the coffee and customer service industry to the <span class='bg-blue p-[1px]'>music world</span>... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
   ease: "none",
 });
 gsap.to('.resume', {
@@ -79,7 +79,7 @@ gsap.to('.img', {
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "Hey! My name is <span class='bg-pink p-[1px]'>Ben</span> and I have over <span class='bg-orange p-[1px]'>16 years</span> of experience as a manager in different industries and continents. From the coffee and customer service industry to the <span class='bg-blue p-[1px]'>music world</span>. Play with the pedal and find out more about me!",
+  text: "Hey! My name is <span class='bg-pink p-[1px]'>Ben</span> and I have over <span class='bg-orange p-[1px]'>16 years</span> of experience as a manager in different industries and continents. Play with the pedal and find out more about me!",
   ease: "none",
 });
 })
