@@ -2,7 +2,6 @@
 import Pedal from './components/Pedal.vue'
 import Lines from './components/Lines.vue'
 import Linkedin from './components/Linkedin.vue'
-import Arrow from './components/Arrow.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
