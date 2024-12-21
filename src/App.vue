@@ -69,7 +69,7 @@ gsap.to('.tbd', {
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "Hey! My name is Ben and I have over 16 years of experience as a manager in different industries and continents. From the coffee and customer service industry to the music world. From America to Europe, and back! Play with the pedal and find out more about me!",
+  text: "Hey! My name is Ben and I have over 16 years of experience as a manager in different industries and continents. From the coffee and customer service industry to the music world. Play with the pedal and find out more about me!",
   ease: "none",
 });
 })
@@ -93,7 +93,7 @@ gsap.to('.intro', {
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 md:text-xl md:font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-8 py-2 md:p-12 md:px-20 z-[99]">
         <p :class="textCode" >Hey! My name is Ben and I have over 16 years of experience as a manager in different industries and continents.
-           From the coffee and customer service industry to the music world. From America to Europe, and back!
+           From the coffee and customer service industry to the music world.
            Play with the pedal and find out more about me!</p>
         <img v-if="textCode === 'tbd'" class="animate-appear w-[90%] md:w-[500px]" src="/bengraphics.png" alt="">
       </div>
