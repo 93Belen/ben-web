@@ -19,10 +19,15 @@ export default {
           '0%': { opacity: 0 },
           '50%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        bounce : {
+          '0%, 100%': { transform: 'translateY(0%)'},
+          '50%': { transform: 'translateY(15%)'},
         }
       },
       animation: {
-        'appear': 'appear 4s linear'
+        'appear': 'appear 4s linear',
+        'bounce': 'bounce 4s'
       }
     },
   },
