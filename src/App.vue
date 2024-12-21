@@ -2,6 +2,7 @@
 import Pedal from './components/Pedal.vue'
 import Lines from './components/Lines.vue'
 import Linkedin from './components/Linkedin.vue'
+import Arrow from './components/Arrow.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
@@ -64,22 +65,22 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "I've managed it all! From the coffee and customer service industry to the <span class='bg-orange p-[1px]'>music world</span>... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
+  text: "I've managed it all! From the coffee and customer service industry to the <span class='inline-flex inline-flex  bg-orange p-[1px]'>music world</span>. Find out more in my <span class='inline-flex  bg-pink p-[1px] flex w-fit gap-2 justify-center items-center'>Linkedin! <svg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.11915 0.0071234C2.57079 -0.0586787 2.07293 0.332504 2.00712 0.880855L0.934816 9.81675C0.869014 10.3651 1.2602 10.863 1.80855 10.9288C2.3569 10.9946 2.85477 10.6034 2.92057 10.055L3.87373 2.11202L11.8167 3.06518C12.3651 3.13099 12.863 2.7398 12.9288 2.19145C12.9946 1.6431 12.6034 1.14523 12.055 1.07943L3.11915 0.0071234ZM14.7863 14.3822L3.78632 0.382179L2.21368 1.61782L13.2137 15.6178L14.7863 14.3822Z' fill='black'/></svg></span>",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Lead at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe...",
+  text: "Assistant Team Lead at Whole Foods Market, Barista in <span class='inline-flex bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='inline-flex bg-pink p-[1px]'>London</span>, Tour Manager in <span class='inline-flex bg-blue p-[1px]'>America</span> and Europe...",
   ease: "none",
 });
 gsap.to('.img', {
   duration: 2,
-  text: "Open to any opportunity at <span class='bg-orange p-[1px] font-bold'>JHS</span>!",
+  text: "Open to any opportunity at <span class='inline-flex bg-orange p-[1px] font-bold'>JHS</span>!",
   ease: "none",
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "Hey! My name is <span class='bg-pink p-[1px]'>Ben</span> and I have over <span class='bg-orange p-[1px]'>16 years</span> of experience as a manager in different industries and continents. Play with the pedal and find out more about me!",
+  text: "Hey! My name is <span class='inline-flex bg-pink p-[1px]'>Ben</span> and I have over <span class='inline-flex bg-orange p-[1px]'>16 years</span> of experience as a manager in different industries and continents. Play with the pedal and find out more about me!",
   ease: "none",
 });
 })
@@ -108,7 +109,7 @@ gsap.to('.intro', {
     <!-- Text & Pedal -->
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 text-lg md:text-2xl font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-4 py-2 md:p-12 md:px-20 z-[99]">
-        <p :class="textCode" class="" ></p>
+        <p :class="textCode" class="inline" ></p>
         <img v-if="textCode === 'img'" class="animate-appear w-[90%] md:w-[500px]" src="/bengraphics.png" alt="">
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
