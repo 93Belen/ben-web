@@ -13,6 +13,15 @@ export default {
       fontFamily: {
         'noto': '"Noto Sans Display"',
         'montserrat': '"Montserrat"'
+      },
+      keyframes: {
+        appear: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        }
+      },
+      animation: {
+        'appear': 'appear 4s linear'
       }
     },
   },
