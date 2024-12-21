@@ -69,7 +69,7 @@ gsap.to('.linkedin', {
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe...",
+  text: "Assistant Team Lead at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe...",
   ease: "none",
 });
 gsap.to('.img', {
