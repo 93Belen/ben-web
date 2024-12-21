@@ -64,17 +64,17 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "I've managed it all! From the coffee and customer service industry to the <span class='bg-blue p-[1px]'>music world</span>... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
+  text: "I've managed it all! From the coffee and customer service industry to the <span class='bg-orange p-[1px]'>music world</span>... Find out more in my <span class='bg-pink p-[1px]'>Linkedin!</span>",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe... I've done it all!",
+  text: "Assistant Team Leader at Whole Foods Market, Barista in <span class='bg-orange p-[1px]'>Spain</span>, General Manager at Taylor Street Baristas in <span class='bg-pink p-[1px]'>London</span>, Tour Manager in <span class='bg-blue p-[1px]'>America</span> and Europe...",
   ease: "none",
 });
 gsap.to('.img', {
   duration: 2,
-  text: "I'm open to any opportunity at <span class='bg-orange p-[1px] font-bold'>JHS</span>!",
+  text: "Open to any opportunity at <span class='bg-orange p-[1px] font-bold'>JHS</span>!",
   ease: "none",
 });
 gsap.to('.intro', {
