@@ -63,7 +63,7 @@ gsap.to('.resume', {
   ease: "none",
 });
 gsap.to('.img', {
-  duration: 3,
+  duration: 2,
   text: "I'm open to any opportunity at JHS!",
   ease: "none",
 });
