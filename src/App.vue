@@ -92,13 +92,13 @@ gsap.to('.intro', {
     <div class="absolute w-[100vw] top-[5px] md:h-[200px] opacity-[0.5] z-[0]">
       <Lines/>
     </div>
-    <div class="flex w-screen">
+    <div class="flex w-screen h-[20dvh] justify-between">
       <!-- Linkedin -->
-      <div class="w-[100px] self-start relative z-[99999]">
+      <div class="w-[100px] self-start relativez-[99999]">
        <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
       </div>
       <!-- Ben Kingston -->
-      <div class="w-full flex justify-end text-center h-[20dvh] font-noto font-[800] pt-0 px-6">
+      <div class="w-fit flex text-center font-noto font-[800] pt-0 px-6">
         <div class="">
           <h1 class="text-[53.5px] tracking-[-2px]">BEN</h1>
           <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
