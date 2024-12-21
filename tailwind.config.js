@@ -8,7 +8,11 @@ export default {
     extend: {
       colors: {
         'ben-green': '#02B7AF',
-        'ben-white': '#F8F8F8'
+        'ben-white': '#F8F8F8',
+        'pink': '#FAC7D1',
+        'orange': '#FFD898',
+        'blue': '#A1DBE5',
+        'black': '#000000'
       },
       fontFamily: {
         'noto': '"Noto Sans Display"',
