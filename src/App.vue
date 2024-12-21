@@ -109,7 +109,7 @@ gsap.to('.intro', {
     <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 text-lg md:text-xl font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-4 py-2 md:p-12 md:px-20 z-[99]">
         <p :class="textCode" class="" ></p>
-        <img v-if="textCode === 'img'" class="animate-appear w-full md:w-[500px]" src="/bengraphics.png" alt="">
+        <img v-if="textCode === 'img'" class="animate-appear w-[90%] md:w-[500px]" src="/bengraphics.png" alt="">
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" :class="bounce ? 'animate-bounce' : ''" class="w-full md:animate-none  h-fit md:w-[350px] min-h-[100dvh] md:min-h-[0px] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
