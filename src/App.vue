@@ -60,6 +60,14 @@ Draggable.create(".knob", {
 
 })
 
+const dirtClick = (e) => {
+  const group = e.target.closest('g')
+      if(group.id === 'dirt'){
+        console.log('dirt')
+        textCode.value = 'contact'
+      }
+}
+
 onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
@@ -80,6 +88,11 @@ gsap.to('.img', {
 gsap.to('.intro', {
   duration: 4,
   text: "Hey! My name is <span class='inline-flex bg-pink p-[1px]'>Ben</span> and I have <span class='inline-flex bg-orange p-[1px]'>19 years</span> of management experience in a variety of industries. Play with the pedal and find out more about me!",
+  ease: "none",
+});
+gsap.to('.contact', {
+  duration: 4,
+  text: "<span class='inline-flex bg-pink p-[1px]'>Call me</span>: (913) 954-8575 or <span class='inline-flex bg-orange p-[1px]'>Email me</span>: 84benkingston@gmail.com",
   ease: "none",
 });
 })
@@ -113,7 +126,7 @@ gsap.to('.intro', {
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" :class="bounce ? 'animate-bounce' : ''" class="w-full md:animate-none  h-fit md:w-[350px] min-h-[100dvh] md:min-h-[0px] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
-          <div id="pedal" class="max-h-[60dvh] w-[80%] m-auto">
+          <div @click="dirtClick" id="pedal" class="max-h-[60dvh] w-[80%] m-auto">
             <Pedal/>
           </div>
       </div>
