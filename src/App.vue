@@ -121,7 +121,7 @@ gsap.to('.contact', {
       <!-- Ben Kingston -->
       <div class="w-fit flex text-center items-start font-noto justify-start font-[800] pt-0 px-2 md:px-6">
         <div class="flex flex-col justify-start">
-          <h1 class="text-[53.5px] tracking-[-2px] mt-[-15px] md:mt-[-5px]">BEN</h1>
+          <h1 class="text-[53.5px] tracking-[-2px] mt-[-20px] md:mt-[-5px]">BEN</h1>
           <p class="text-[19px] tracking-[-0.5px] mt-[-25px]">KINGSTON</p>
         </div>
       </div>
