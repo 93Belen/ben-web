@@ -114,7 +114,7 @@ gsap.to('.contact', {
         <!-- Resume -->
         <div class="w-fit px-2 h-[60px] md:h-[70px] bg-orange text-black text-xl flex justify-center items-center text-center">
           <div class="absolute w-[60px] h-[40px] bg-pink z-[5] skew-y-12"></div>
-          <a class="z-[15]" href="/BenKingston.pdf" download="BenKingstonResume">Resume</a>
+          <a class="z-[15]" href="/BenKingston.pdf" target="_blank" download>Resume</a>
         </div>
         </div>
       <!-- Ben Kingston -->
