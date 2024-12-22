@@ -107,8 +107,9 @@ gsap.to('.contact', {
       <Lines/>
     </div>
     <div class="flex w-screen h-[20dvh] md:h-[10vh] pt-2 justify-between">
-      <!-- Linkedin -->
+      <!-- Linkedin and Resume -->
       <div class="flex z-[99999] items-start">
+        <!-- Linkedin -->
         <div class="md:w-[70px] w-[60px]">
           <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> 
           <Linkedin/> 

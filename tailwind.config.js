@@ -9,7 +9,7 @@ export default {
       colors: {
         'ben-green': '#02B7AF',
         'ben-white': '#F8F8F8',
-        'pink': '#FAC7D1',
+        'pink': '#F7D8D8',
         'orange': '#FFD898',
         'blue': '#A1DBE5',
         'black': '#000000'
