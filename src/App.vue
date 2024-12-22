@@ -136,8 +136,8 @@ gsap.to('.contact', {
         <img v-if="textCode === 'img'" class="animate-appear md:m-auto w-[90%] md:w-[500px] z-[10]" src="/bengraphics.png" alt="">
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
-        <div id="pedal-div" :class="bounce ? 'animate-bounce' : ''" class="w-full md:animate-none  h-fit md:w-[350px] min-h-[100dvh] md:min-h-[0px] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
-          <div @click="dirtClick" id="pedal" class="max-h-[60dvh] w-[80%] m-auto">
+        <div id="pedal-div" :class="bounce ? 'animate-bounce' : ''" class="w-full md:animate-none h-fit md:w-[350px] min-h-[100dvh] md:min-h-[0px] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
+          <div @touchstart="dirtClick" @click="dirtClick" id="pedal" class="max-h-[60dvh] w-[80%] m-auto">
             <Pedal/>
           </div>
       </div>
