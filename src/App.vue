@@ -2,6 +2,7 @@
 import Pedal from './components/Pedal.vue'
 import Lines from './components/Lines.vue'
 import Linkedin from './components/Linkedin.vue'
+import OrangeGraphic from './components/OrangeGraphic.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
@@ -91,8 +92,8 @@ gsap.to('.intro', {
   ease: "none",
 });
 gsap.to('.contact', {
-  duration: 4,
-  text: "<span class='inline-flex bg-pink p-[1px]'>Call me</span>: (913) 954-8575 or <span class='inline-flex bg-orange p-[1px]'>Email me</span>: 84benkingston@gmail.com",
+  duration: 2,
+  text: "Call me <span class='inline-flex bg-pink p-[1px]'>(913) 954-8575</span> or Email me <span class='inline-flex bg-orange p-[1px]'>84benkingston@gmail.com</span>",
   ease: "none",
 });
 })
@@ -105,7 +106,7 @@ gsap.to('.contact', {
     <div class="absolute w-[100vw] top-[5px] md:h-[200px] opacity-[0.5] z-[0]">
       <Lines/>
     </div>
-    <div class="flex w-screen h-[20dvh] justify-between">
+    <div class="flex w-screen h-[20dvh] md:h-[10vh] justify-between">
       <!-- Linkedin -->
       <div class="w-[70px] self-start z-[99999]">
        <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
@@ -119,10 +120,14 @@ gsap.to('.contact', {
       </div>
     </div>
     <!-- Text & Pedal -->
-    <div class="md:flex h-[80dvh] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
-      <div class="md:w-[60vw] col-start-1 text-lg md:text-2xl font-regular row-start-1 z-[0] md:order-last md:h-fit flex flex-col px-4 py-2 md:p-12 md:px-20 z-[99]">
-        <p :class="textCode" class="inline" ></p>
-        <img v-if="textCode === 'img'" class="animate-appear w-[90%] md:w-[500px]" src="/bengraphics.png" alt="">
+    <div class="md:flex h-[80dvh] md:h-[90vh] md:max-h-[850px] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
+      <div class="md:w-[60vw] col-start-1 text-lg md:text-2xl font-regular justify-start row-start-1 z-[0] md:order-last md:h-full flex flex-col px-4 py-2 md:p-12 md:px-20 z-[99]">
+        <!-- ORANGE GRAPHIC  -->
+        <div v-if="textCode !== 'img'" class="z-0 w-[40vw] mt-[10vh] hidden md:block absolute m-auto opacity-[0.2] rotate-12">
+          <OrangeGraphic/>
+        </div>
+        <p :class="textCode" class="inline z-[5] md:m-auto h-fit" ></p>
+        <img v-if="textCode === 'img'" class="animate-appear md:m-auto w-[90%] md:w-[500px] z-[10]" src="/bengraphics.png" alt="">
       </div>
       <div class="container col-start-1 row-start-1 z-[99] md:order-1 h-[140dvh] md:h-fit w-full md:static md:w-[40vw] md:min-w-[350px] md:max-w-[450px] md:px-2 md:top-0 md:flex justify-center items-center">
         <div id="pedal-div" :class="bounce ? 'animate-bounce' : ''" class="w-full md:animate-none  h-fit md:w-[350px] min-h-[100dvh] md:min-h-[0px] px-6 bg-ben-white/30 backdrop-blur md:backdrop-blur-none rounded-t-[50px] pt-4 md:pt-0 md:bg-transparent">
