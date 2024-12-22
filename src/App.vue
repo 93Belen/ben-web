@@ -112,7 +112,7 @@ gsap.to('.contact', {
           <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
         </div>
         <!-- Resume -->
-        <div class="w-fit px-2 h-[60px] md:h-[70px] bg-orange text-black text-xl flex justify-center items-center text-center">
+        <div class="w-fit px-2 h-[60px] md:h-[70px] bg-orange text-black md:text-lg text-md flex justify-center items-center text-center">
           <div class="absolute w-[60px] h-[40px] bg-pink z-[5] skew-y-12"></div>
           <a class="z-[15]" href="/BenKingston.pdf" target="_blank" download>Resume</a>
         </div>
