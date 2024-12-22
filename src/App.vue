@@ -40,7 +40,7 @@ Draggable.create(".knob", {
   type: "rotation",
   transformOrigin: "right bottom",
   dragResistance: 0.15,
-  onDrag: (e) =>{
+  onPress: (e) =>{
     const thisKnob = e.target.closest('g').id
     console.log(thisKnob)
     if(thisKnob === 'volume'){
