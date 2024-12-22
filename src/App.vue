@@ -63,8 +63,7 @@ Draggable.create(".knob", {
 
 const dirtClick = (e) => {
   const group = e.target.closest('g')
-      if(group.id === 'dirt'){
-        console.log('dirt')
+      if(group.className.baseVal === 'contact-button'){
         textCode.value = 'contact'
       }
 }
