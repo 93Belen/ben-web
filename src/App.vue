@@ -106,7 +106,7 @@ gsap.to('.contact', {
     <div class="absolute w-[100vw] top-[5px] md:h-[200px] opacity-[0.5] z-[0]">
       <Lines/>
     </div>
-    <div class="flex w-screen h-[20dvh] md:h-[10vh] justify-between">
+    <div class="flex w-screen h-[20dvh] md:h-[10vh] pt-2 justify-between">
       <!-- Linkedin -->
       <div class="relative flex z-[99999] items-start">
         <div class="md:w-[70px] w-[60px]">
