@@ -73,27 +73,27 @@ onUpdated(() => {
 // Change text
 gsap.to('.linkedin', {
   duration: 4,
-  text: "From the coffee and customer service industry to the <span class='inline-flex inline-flex  bg-orange p-[1px]'>music world</span>. Find out more in my <span class='inline-flex  bg-blue p-[1px] flex w-fit gap-2 justify-center items-center'>Linkedin</span> or download my <span class='inline-flex  bg-pink p-[1px] flex w-fit gap-2 justify-center items-center'>Resume! <svg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.11915 0.0071234C2.57079 -0.0586787 2.07293 0.332504 2.00712 0.880855L0.934816 9.81675C0.869014 10.3651 1.2602 10.863 1.80855 10.9288C2.3569 10.9946 2.85477 10.6034 2.92057 10.055L3.87373 2.11202L11.8167 3.06518C12.3651 3.13099 12.863 2.7398 12.9288 2.19145C12.9946 1.6431 12.6034 1.14523 12.055 1.07943L3.11915 0.0071234ZM14.7863 14.3822L3.78632 0.382179L2.21368 1.61782L13.2137 15.6178L14.7863 14.3822Z' fill='black'/></svg></span",
+  text: "From the coffee and customer service industry to the <span class='inline-flex inline-flex  bg-orange   '>music world</span>. Find out more in my <span class='inline-flex  bg-blue    flex w-fit gap-2 justify-center items-center'>Linkedin</span> or download my <span class='inline-flex  bg-pink    flex w-fit gap-2 justify-center items-center'>Resume! <svg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.11915 0.0071234C2.57079 -0.0586787 2.07293 0.332504 2.00712 0.880855L0.934816 9.81675C0.869014 10.3651 1.2602 10.863 1.80855 10.9288C2.3569 10.9946 2.85477 10.6034 2.92057 10.055L3.87373 2.11202L11.8167 3.06518C12.3651 3.13099 12.863 2.7398 12.9288 2.19145C12.9946 1.6431 12.6034 1.14523 12.055 1.07943L3.11915 0.0071234ZM14.7863 14.3822L3.78632 0.382179L2.21368 1.61782L13.2137 15.6178L14.7863 14.3822Z' fill='black'/></svg></span",
   ease: "none",
 });
 gsap.to('.resume', {
   duration: 4,
-  text: "Manager at Whole Foods and Home Depot, Barista in <span class='inline-flex bg-orange p-[1px]'>Spain</span>, General Manager for Taylor Street Baristas in <span class='inline-flex bg-pink p-[1px]'>London</span>, Tour Manager across <span class='inline-flex bg-blue p-[1px]'>America</span> and Europe...",
+  text: "Manager at Whole Foods and Home Depot, Barista in <span class='inline-flex bg-orange   '>Spain</span>, General Manager for Taylor Street Baristas in <span class='inline-flex bg-pink   '>London</span>, Tour Manager across <span class='inline-flex bg-blue   '>America</span> and Europe...",
   ease: "none",
 });
 gsap.to('.img', {
   duration: 2,
-  text: "Open to any opportunity at <span class='inline-flex bg-orange p-[1px] font-bold'>JHS</span>!",
+  text: "Open to any opportunity at <span class='inline-flex bg-orange    font-bold'>JHS</span>!",
   ease: "none",
 });
 gsap.to('.intro', {
   duration: 4,
-  text: "Hey! My name is <span class='inline-flex bg-pink p-[1px]'>Ben</span> and I have <span class='inline-flex bg-orange p-[1px]'>19 years</span> of management experience in a variety of industries. Play with the pedal and find out more about me!",
+  text: "Hey! My name is <span class='inline-flex bg-pink'>Ben</span> and I have <span class='inline-flex bg-orange   '>19 years</span> of management experience in a variety of industries. Play with the pedal and find out more about me!",
   ease: "none",
 });
 gsap.to('.contact', {
   duration: 2,
-  text: "Call me <span class='inline-flex bg-pink p-[1px]'>(913) 954-8575</span> or Email me <span class='inline-flex bg-orange p-[1px]'>84benkingston@gmail.com</span>",
+  text: "Call me <span class='inline-flex bg-pink'>(913) 954-8575</span> or Email me <span class='inline-flex bg-orange   '>84benkingston@gmail.com</span>",
   ease: "none",
 });
 })
