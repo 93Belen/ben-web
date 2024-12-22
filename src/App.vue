@@ -3,6 +3,7 @@ import Pedal from './components/Pedal.vue'
 import Lines from './components/Lines.vue'
 import Linkedin from './components/Linkedin.vue'
 import OrangeGraphic from './components/OrangeGraphic.vue'
+import Download from './components/Download.vue'
 import { gsap } from "gsap";
     
 import { Draggable } from "gsap/Draggable";
@@ -107,14 +108,15 @@ gsap.to('.contact', {
     </div>
     <div class="flex w-screen h-[20dvh] md:h-[10vh] pt-2 justify-between">
       <!-- Linkedin -->
-      <div class="relative flex z-[99999] items-start">
+      <div class="relative flex z-[99999] items-start flex-col md:flex-row">
         <div class="md:w-[70px] w-[60px]">
           <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
         </div>
         <!-- Resume -->
-        <div class="w-fit px-2 h-[60px] md:h-[70px] bg-orange text-black md:text-lg text-md flex justify-center items-center text-center">
-          <div class="absolute w-[60px] h-[40px] bg-pink z-[5] skew-y-12"></div>
-          <a class="z-[15]" href="/BenKingston.pdf" target="_blank" download>Resume</a>
+        <div class="w-fit px-2 h-[60px] w-[60px] md:w-[70px] md:h-[70px] bg-pink text-black md:text-lg text-md flex justify-center items-center text-center">
+          <a class="z-[15]" href="/BenKingston.pdf" target="_blank" download>
+          <div class="w-[40px]"><Download/></div>
+          </a>
         </div>
         </div>
       <!-- Ben Kingston -->
