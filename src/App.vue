@@ -108,9 +108,16 @@ gsap.to('.contact', {
     </div>
     <div class="flex w-screen h-[20dvh] md:h-[10vh] justify-between">
       <!-- Linkedin -->
-      <div class="w-[70px] self-start z-[99999]">
-       <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
-      </div>
+      <div class="relative flex z-[99999] items-start">
+        <div class="md:w-[70px] w-[60px]">
+          <a target="_blank" href="https://www.linkedin.com/in/ben-kingston-60025516a/"> <Linkedin/> </a>
+        </div>
+        <!-- Resume -->
+        <div class="w-fit px-2 h-[60px] md:h-[70px] bg-orange text-black text-xl flex justify-center items-center text-center">
+          <div class="absolute w-[60px] h-[40px] bg-pink z-[5] skew-y-12"></div>
+          <a class="z-[15]" href="" download>Resume</a>
+        </div>
+        </div>
       <!-- Ben Kingston -->
       <div class="w-fit flex text-center font-noto font-[800] pt-0 px-6">
         <div class="">
