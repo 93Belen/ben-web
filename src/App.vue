@@ -12,6 +12,8 @@ import { onMounted, ref, watch, onUpdated } from 'vue';
 
 const textCode = ref('intro')
 const bounce = ref(null)
+const hasBeenDraggedDown = ref(false)
+
 
 gsap.registerPlugin(Draggable, TextPlugin);
 
@@ -25,6 +27,7 @@ onMounted(() => {
   dragResistance: 0.1,
   onDrag: () => {
     bounce.value = false
+    hasBeenDraggedDown.value = true
   }
 });
 setTimeout(() => {
@@ -43,7 +46,11 @@ Draggable.create(".knob", {
   dragResistance: 0.15,
   onPress: (e) =>{
     const thisKnob = e.target.closest('g').id
-    console.log(thisKnob)
+    if(!hasBeenDraggedDown.value){
+      const pedalDiv = document.getElementById('pedal-div')
+      pedalDiv.classList.add('animate-getdown')
+      hasBeenDraggedDown.value = true
+    }
     if(thisKnob === 'volume'){
       textCode.value = 'linkedin'
     }

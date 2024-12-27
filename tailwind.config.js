@@ -27,11 +27,16 @@ export default {
         bounce : {
           '0%, 100%': { transform: 'translateY(0%)'},
           '50%': { transform: 'translateY(15%)'},
+        },
+        getdown : {
+          '0%': { transform: 'translateY(0%)'},
+          '100%': { transform: 'translateY(40%)'},
         }
       },
       animation: {
         'appear': 'appear 4s linear',
-        'bounce': 'bounce 4s'
+        'bounce': 'bounce 4s',
+        'getdown': 'getdown 4s forwards'
       }
     },
   },
