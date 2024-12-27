@@ -141,7 +141,7 @@ gsap.to('.contact', {
     <div class="md:flex h-[80dvh] md:h-[90vh] md:max-h-[850px] grid grid-cols-1 grid-rows-1 md:justify-center md:items-center relative z-[80] oerflow-hidden">
       <div class="md:w-[60vw] col-start-1 text-lg md:text-2xl font-regular justify-start row-start-1 z-[0] md:order-last md:h-full flex flex-col px-4 py-2 md:p-12 md:px-20 z-[99]">
         <!-- ORANGE GRAPHIC  -->
-        <div v-if="textCode !== 'img'" class="z-0 w-[40vw] mt-[10vh] hidden md:block absolute m-auto opacity-[0.2] rotate-12">
+        <div v-if="textCode !== 'img'" class="z-0 w-[40vw] mt-[10vh] hidden md:block absolute m-auto opacity-[0.6] rotate-12">
           <OrangeGraphic/>
         </div>
         <p :class="textCode" class="inline z-[5] md:m-auto h-fit" ></p>
