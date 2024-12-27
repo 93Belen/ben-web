@@ -30,7 +30,7 @@ export default {
         },
         getdown : {
           '0%': { transform: 'translateY(0%)'},
-          '100%': { transform: 'translateY(40%)'},
+          '100%': { transform: 'translateY(30%)'},
         }
       },
       animation: {
